@@ -1,7 +1,7 @@
 import random
 
 selected_language = ""
-lessons = {"Chinese":{1:["Greetings!",
+lessons = {"Chinese":{0:["Greetings!",
                     ["你好","再见","早上好","晚上好","下午好"], 
                     ["ni hao","zai jian","zao shang hao",
                      "wan shang hao","xia wu hao"]]}}
@@ -17,4 +17,6 @@ while selected_language == "":
         selected_language = ""
 selected_language = all_languages[int(selected_language)-1]
 #print(selected_language)
-
+print(f"Let's start learning {selected_language}!")
+for i in range(0,len(lessons[selected_language])):
+    print(f"Lesson {i+1}: {lessons[selected_language][i][0]}")
