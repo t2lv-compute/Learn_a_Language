@@ -2,9 +2,11 @@ import random
 
 selected_language = ""
 lessons = {"Chinese":{0:["Greetings!",
-                    ["你好","再见","早上好","晚上好","下午好"], 
+                    ["你好","再见","早上好","晚安","下午好"], 
                     ["ni hao","zai jian","zao shang hao",
-                     "wan shang hao","xia wu hao"]]}}
+                     "wan an","xia wu hao"],
+                    ["Hello","Goodbye","Good Morning","Good Night",
+                     "Good Afternoon"]]}}
 all_languages = ["Chinese"]
 #print(list(range(1,len(all_languages)+1)))
 print("Welcome to Language Learner.\nSelect a language:")
